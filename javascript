@@ -1,3 +1,7 @@
+// =========================================
+// MOBILE NAVIGATION
+// =========================================
+
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -22,10 +26,12 @@ menuBtn.addEventListener("click", function () {
             "aria-label",
             "Open navigation menu"
         );
-
     }
 
 });
+
+
+// Close menu after selecting a link
 
 const navigationLinks =
     document.querySelectorAll(".nav-links a");
@@ -42,6 +48,11 @@ navigationLinks.forEach(function (link) {
 
 });
 
+
+// =========================================
+// EXPLORE BUTTON
+// =========================================
+
 const exploreBtn =
     document.getElementById("exploreBtn");
 
@@ -53,6 +64,11 @@ exploreBtn.addEventListener("click", function () {
         });
 
 });
+
+
+// =========================================
+// WELCOME MESSAGE
+// =========================================
 
 const welcomeBtn =
     document.getElementById("welcomeBtn");
@@ -66,6 +82,11 @@ welcomeBtn.addEventListener("click", function () {
         "Welcome! Thanks for visiting my interactive website.";
 
 });
+
+
+// =========================================
+// COUNTER
+// =========================================
 
 let counter = 0;
 
@@ -81,6 +102,7 @@ const decreaseBtn =
 const resetBtn =
     document.getElementById("resetBtn");
 
+
 increaseBtn.addEventListener("click", function () {
 
     counter++;
@@ -88,6 +110,7 @@ increaseBtn.addEventListener("click", function () {
     counterValue.textContent = counter;
 
 });
+
 
 decreaseBtn.addEventListener("click", function () {
 
@@ -101,6 +124,7 @@ decreaseBtn.addEventListener("click", function () {
 
 });
 
+
 resetBtn.addEventListener("click", function () {
 
     counter = 0;
@@ -108,6 +132,11 @@ resetBtn.addEventListener("click", function () {
     counterValue.textContent = counter;
 
 });
+
+
+// =========================================
+// FAQ ACCORDION
+// =========================================
 
 const faqQuestions =
     document.querySelectorAll(".faq-question");
@@ -124,6 +153,11 @@ faqQuestions.forEach(function (question) {
     });
 
 });
+
+
+// =========================================
+// CONTACT FORM VALIDATION
+// =========================================
 
 const contactForm =
     document.getElementById("contactForm");
@@ -149,9 +183,12 @@ const messageError =
 const successMessage =
     document.getElementById("successMessage");
 
+
 contactForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
+
+    // Clear previous messages
 
     nameError.textContent = "";
     emailError.textContent = "";
@@ -159,6 +196,9 @@ contactForm.addEventListener("submit", function (event) {
     successMessage.textContent = "";
 
     let isValid = true;
+
+
+    // Name validation
 
     if (nameInput.value.trim() === "") {
 
@@ -168,6 +208,9 @@ contactForm.addEventListener("submit", function (event) {
         isValid = false;
 
     }
+
+
+    // Email validation
 
     const emailPattern =
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -188,6 +231,9 @@ contactForm.addEventListener("submit", function (event) {
 
     }
 
+
+    // Message validation
+
     if (messageInput.value.trim() === "") {
 
         messageError.textContent =
@@ -196,6 +242,9 @@ contactForm.addEventListener("submit", function (event) {
         isValid = false;
 
     }
+
+
+    // Successful submission
 
     if (isValid) {
 
