@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Interactive frontend website using HTML, CSS and JavaScript">
+
+    <title>Interactive Web Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                WebDesign
+            </a>
+
+            <button
+                id="menuBtn"
+                class="menu-btn"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    WEEK 3 FRONTEND PROJECT
+                </p>
+
+                <h1>
+                    Interactive Web Experience
+                </h1>
+
+                <p>
+                    A responsive website enhanced with JavaScript
+                    for dynamic and interactive user experiences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="btn"
+                        id="exploreBtn">
+                        Explore Features
+                    </button>
+
+                    <button
+                        class="btn outline-btn"
+                        id="welcomeBtn">
+                        Show Welcome
+                    </button>
+
+                </div>
+
+                <p id="welcomeMessage"
+                   class="welcome-message">
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="container about-content">
+
+                <div class="about-text">
+
+                    <p class="section-label">
+                        ABOUT PROJECT
+                    </p>
+
+                    <h2>
+                        JavaScript Makes Websites Interactive
+                    </h2>
+
+                    <p>
+                        JavaScript allows webpages to respond to
+                        user actions such as clicks, form submissions,
+                        menu selections, and button interactions.
+                    </p>
+
+                    <p>
+                        This project demonstrates DOM manipulation,
+                        event listeners, form validation, dynamic
+                        content, counters, and interactive UI elements.
+                    </p>
+
+                </div>
+
+                <div class="about-image">
+
+                    <img
+                        src="images/responsive-design.jpg"
+                        alt="Interactive responsive web design"
+                        loading="lazy">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="features" id="features">
+
+            <div class="container">
+
+                <p class="section-label center">
+                    JAVASCRIPT FEATURES
+                </p>
+
+                <h2>
+                    Interactive Features
+                </h2>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Mobile Menu
+                        </h3>
+
+                        <p>
+                            JavaScript opens and closes the
+                            responsive navigation menu.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🖱️
+                        </div>
+
+                        <h3>
+                            Button Events
+                        </h3>
+
+                        <p>
+                            Buttons respond dynamically to
+                            user click events.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📝
+                        </div>
+
+                        <h3>
+                            Form Validation
+                        </h3>
+
+                        <p>
+                            JavaScript checks the contact form
+                            before submission.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🔢
+                        </div>
+
+                        <h3>
+                            Dynamic Counter
+                        </h3>
+
+                        <p>
+                            Numbers are dynamically generated
+                            using JavaScript.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="counter-section">
+
+            <div class="container counter-content">
+
+                <p class="section-label">
+                    JAVASCRIPT COUNTER
+                </p>
+
+                <h2>
+                    Interactive Counter
+                </h2>
+
+                <div class="counter-box">
+
+                    <button
+                        class="counter-btn"
+                        id="decreaseBtn">
+                        −
+                    </button>
+
+                    <span id="counterValue">
+                        0
+                    </span>
+
+                    <button
+                        class="counter-btn"
+                        id="increaseBtn">
+                        +
+                    </button>
+
+                </div>
+
+                <button
+                    class="reset-btn"
+                    id="resetBtn">
+                    Reset Counter
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="faq">
+
+            <div class="container">
+
+                <p class="section-label center">
+                    INTERACTIVE FAQ
+                </p>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+                <div class="faq-container">
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            What is JavaScript?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                JavaScript is a programming language
+                                used to add dynamic behavior and
+                                interactivity to websites.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            What is DOM manipulation?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                DOM manipulation means using JavaScript
+                                to access and modify HTML elements,
+                                content, styles, or attributes.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                            What are event listeners?
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Event listeners allow JavaScript to
+                                execute a function when a specific
+                                event occurs, such as a click.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <p class="section-label center">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Send a Message
+                </h2>
+
+                <p class="contact-description">
+                    This form uses JavaScript to validate
+                    the user input before displaying a result.
+                </p>
+
+                <form
+                    id="contactForm"
+                    class="contact-form"
+                    novalidate>
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name">
+
+                        <small id="nameError"></small>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email">
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Enter your message">
+                        </textarea>
+
+                        <small id="messageError"></small>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+                        Submit
+                    </button>
+
+                    <p id="successMessage"
+                       class="success-message">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Interactive Web Experience |
+            Frontend Developer Internship
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
